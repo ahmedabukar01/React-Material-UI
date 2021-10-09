@@ -1,11 +1,10 @@
 import React from 'react'
-import {Typography, AppBar, Card, CardActions, CardMedia, CssBaseline, Grid, Toolbar,Container} from '@material-ui/core'
+import {Typography, AppBar, Card, CardActions, CardMedia, Button, CssBaseline, Grid, Toolbar,Container} from '@material-ui/core'
 import {PhotoCamera} from '@material-ui/icons'
-
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup'
+import useStyles from './styles'
 
 const App = () => {
+  const classes = useStyles();
   return (
     <>
       <CssBaseline />
@@ -18,7 +17,7 @@ const App = () => {
         </Toolbar>
       </AppBar>
     
-      <main>
+      <main className={classes.container}>
         <div>
           <Container maxWidth="sm">
             <Typography variant="h2" align="center" color="textPrimary" gutterBottom>
@@ -27,13 +26,18 @@ const App = () => {
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Hi Everyone here is photo album that i am creating so this text is just testing long paragraph so as always keep practicing.
             </Typography>
-
-            <ButtonGroup variant="contained" aria-label="outlined primary button group">
-              <Button>One</Button>
-              <Button>Two</Button>
-              <Button>Three</Button>
-            </ButtonGroup>
-        
+            <Grid container spacing={2} justifyContent="center">
+              <Grid item>
+                <Button variant="contained" color="primary">
+                  See my Photos
+                </Button>
+                </Grid>
+              <Grid item>
+                <Button variant="outlined" color="primary">
+                  Secondary option
+                </Button>
+                </Grid>
+            </Grid>
           </Container>
         </div>
         </main>
