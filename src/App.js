@@ -5,6 +5,16 @@ import useStyles from './styles'
 
 const App = () => {
   const classes = useStyles();
+
+  /*
+  const cards = [1,2,3,4,5,6,,7] 
+  
+  // i can use this way simply for making more grid cards by saying
+  // { cards.map(()=>(
+        ....... card code
+  ))}
+  
+  */
   return (
     <>
       <CssBaseline />
@@ -44,7 +54,7 @@ const App = () => {
         </div>
         <Container maxWidth="md" className={classes.cardGrid}>
           <Grid container spacing={4}>
-            <Grid item>
+            <Grid item xs={12} sm={6} md={4} >
               <Card className={classes.card}> 
                 <CardMedia 
                   image="https://source.unsplash.com/random"
@@ -59,11 +69,149 @@ const App = () => {
                     this is cardMedia you can use for describing the content of your card...
                   </Typography>
                 </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
+              </Card>
+              </Grid>
+            <Grid item xs={12} sm={6} md={4} >
+              <Card className={classes.card}> 
+                <CardMedia 
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                  className={classes.cardMedia}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography >
+                    this is cardMedia you can use for describing the content of your card...
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
+              </Card>
+              </Grid>
+            <Grid item xs={12} sm={6} md={4} >
+              <Card className={classes.card}> 
+                <CardMedia 
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                  className={classes.cardMedia}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography >
+                    this is cardMedia you can use for describing the content of your card...
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
+              </Card>
+              </Grid>
+            <Grid item xs={12} sm={6} md={4} >
+              <Card className={classes.card}> 
+                <CardMedia 
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                  className={classes.cardMedia}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography >
+                    this is cardMedia you can use for describing the content of your card...
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
+              </Card>
+              </Grid>
+            <Grid item xs={12} sm={6} md={4} >
+              <Card className={classes.card}> 
+                <CardMedia 
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                  className={classes.cardMedia}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography >
+                    this is cardMedia you can use for describing the content of your card...
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
+              </Card>
+              </Grid>
+            <Grid item xs={12} sm={6} md={4} >
+              <Card className={classes.card}> 
+                <CardMedia 
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                  className={classes.cardMedia}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography >
+                    this is cardMedia you can use for describing the content of your card...
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
+              </Card>
+              </Grid>
+            <Grid item xs={12} sm={6} md={4} >
+              <Card className={classes.card}> 
+                <CardMedia 
+                  image="https://source.unsplash.com/random"
+                  title="image title"
+                  className={classes.cardMedia}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Heading
+                  </Typography>
+                  <Typography >
+                    this is cardMedia you can use for describing the content of your card...
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">View</Button>
+                  <Button size="small" color="primary">Edit</Button>
+                </CardActions>
               </Card>
               </Grid>
           </Grid>
         </Container>
         </main>
+          <footer className={classes.footer}>
+            <Typography variant="h6" align="center" gutterBottom>
+              footer
+            </Typography>
+            <Typography variant="subtitle1" align="center" color="textSecondary">
+              some here to give the footer for purposes :)
+            </Typography>
+          </footer>
     
     </>
   )
